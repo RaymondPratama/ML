@@ -1,0 +1,14 @@
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>   
+<script>
+    async function loadModel(){
+        const MODEL_URL = 'http://localhost:8000/Downloads/ML/model.json';
+        const model = await tf.loadLayersModel(MODEL_URL);
+        console.log(model.summary())
+	}
+	loadModel();
+</script>
+</head> 
+<body></body>   
+</html>
